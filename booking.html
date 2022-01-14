@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking </title>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+body{
+    background-image: url('https://i.postimg.cc/9fqXswTd/bell.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    margin-left: 10px;
+}
+marquee{  
+    font-size: 30px;
+    font-weight: bold;
+}
+p{
+    font-size: 20px;
+    font-weight:bold;
+}
+#button{
+         width: 100px;
+         border-radius: 20%;
+         cursor: pointer;
+         box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.788);        
+     }
+     #button:hover{
+        
+        
+         font-weight:bold;
+         font-style: italic;
+     }
+
+    </style>
+</head>
+<body>
+  
+<marquee>Hotel Maharaja</marquee>
+<p>Maharaja Hotel, Mumbai Andheri(w)</p><br><br>
+<form>   
+    <label>
+    Enter Name : <input type="text" name="txtUser" maxlength="30/"><br><br>
+    Enter Mobile No :  <input type="text" name="txtPass"/><br><br>
+
+    <strong>I want table for : </strong> <br> <br>
+   <input type="radio" id="2persons" value="2 Persons" name="Seats" >
+   <label for="2persons">2 Persons</label> <br> <br>
+   <input type="radio" id="mT2" value="More than 2" name="Seats">
+    <label for="mT2">More than 2 </label> <br> <br>
+    <input type="radio" id="FF" value="For Family" name="Seats">
+    <label for="FF">For Family</label> <br> <br>
+
+    <label for="time">Morning / Afternoon / Evening / Night </label>
+    <input list="time" name="time" id="time"> 
+    <datalist id="time">
+        <option value="Morning">
+        <option value="Afternoon">
+        <option value="Evening">
+        <option value="Night">
+    </datalist><br><br>
+
+    <strong> How will you pay : </strong> <br> <br>
+    <input type="radio" id="Cash" value="Cash" name="payment" >
+    <label for="Cash">Cash</label> <br> <br>
+    <input type="radio" id="GP" value="Google Pay" name="payment">
+     <label for="GP">Google Pay </label> <br> <br>
+     <input type="radio" id="DC" value="Debit Card" name="payment">
+     <label for="DC">Debit Card</label> <br> <br>
+</label><br>
+   <input type="button" value="Submit" id="button" onclick="msg()">
+</form>
+</body>
+<script>
+    function msg(){
+        alert('Table successfully reserved .');
+    }
+</script>
+</html>

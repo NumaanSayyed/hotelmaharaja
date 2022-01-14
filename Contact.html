@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us </title>
+   
+<style>
+   
+  *{
+      margin: 0;
+      padding: 0;     
+  }
+  body{
+    background-image: url('https://i.postimg.cc/66bVfD9D/about.jpg');
+    background-size: cover;
+    
+  }
+     .container{         
+        height: 95vh;
+        width: 50vh;
+        background-color: rgba(0, 0, 0, 0.4 );
+        text-align: center;
+        margin-top: 100px;
+        margin-left: 358px;        
+        color: #fff;       
+        text-shadow:10px 10px 10px black;
+        border-radius: 20px 20px 20px 20px;
+        font-size: 1.1em;
+     }
+     .container>img{
+         border-radius: 50%;
+         height: 100px;
+         width: 60px;
+     }
+     #button{
+         width: 100px;
+         border-radius: 20%;
+         cursor: pointer;
+         box-shadow: 2px 2px 2px #000;        
+     }
+     #button:hover{
+         background-color:black;
+         color: white;
+         font-weight:bold;
+         font-style: italic;
+     }
+    
+
+</style>
+</head>
+<script>
+    function msg(){
+        alert("your form has been submitted");
+        }
+</script>
+<body>
+
+
+    <div class="container">
+
+      <img src="https://i.postimg.cc/cJK6Zbq8/img-avatar.png" alt="logo"><br>
+
+    <form action="/action_page.php">
+        <label for="name"><b> Full Name : </b></label><br><br>
+       <input type="text" placeholder="Enter your full name" required><br><br>
+       <label for="email"><b> Email :</b></label><br><br>
+       <input type="email" placeholder="Enter your Email" required><br><br>
+       <label for="password"><b> Password :</b></label><br><br>
+       <input type="password" placeholder="Enter your password" required><br><br>
+       <label for="number"><b> Phone :</b></label><br><br>
+       <input type="number" placeholder="Enter your Phone No" required><br><br><br>
+       <label for="number"><b> What do you want to ask :</b></label><br><br>
+       <input type="text" placeholder="What do you want to ask" required><br><br><br>
+    
+    
+      <input type="button" value="Submit" onclick="msg()" id="button"></b>     
+    </form>
+</div>
+   
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>About us</title>
+   
+    <style>
+      
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Zen+Dots&display=swap');
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+body{
+  background:url("https://images.pexels.com/photos/3771110/pexels-photo-3771110.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3771110.jpg&fm=jpg");
+  background-size:cover;
+  width:100%;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+#button{
+   width:150px;
+   height:20px;
+   background-color:rgba(255,255,255,0.06);
+    text-align:center;
+cursor: pointer;
+display:flex;
+align-items:center;
+  justify-content:center;
+text-transform: uppercase;
+  text-decoration:none;
+  backdrop-filter:blur(10px);
+  
+     margin: auto;
+    left: 0;
+    right: 0;
+    top: 450px;
+    bottom: 0;
+    color: white;
+    border:2px solid rgba(255,255,255,0.06);
+    border-radius:39px 30px 39px 30px;
+
+    
+}
+.card{
+  width:400px;
+  height:450px;
+  background-color:rgba(255,255,255,0.04) ;
+  position:relative;
+  top:30px;
+  backdrop-filter:blur(10px);
+  border-radius:10px;
+  border:2px solid rgba(255,255,255,0.06);
+}
+img{
+  height:200px;
+  position:absolute;
+  left:50%;
+  border-radius: 10% 10% 10% 10%;
+  bottom:0px;
+  transform:translate(-50%);
+  transition:left 1s, height 1s;
+}
+.card:hover img{
+  left:78%;
+  height:400px;
+  width:150px;
+  bottom:+10px;
+}
+.text{
+  top:20px;
+  visibility:hidden;
+  opacity:0;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width:60%; 
+  padding:10px ;
+  color:black;
+  position:absolute;
+  left:50%;
+  transition: left 1s,opacity 0.5s;
+  
+}
+
+p{
+  font-size:12px;
+  font-family: 'Orelega One', cursive;
+}
+.card:hover .text{
+  left:0px;
+  visibility:visible ;
+  opacity:1;
+}
+
+      
+    </style>
+</head>
+
+<body id="clk">
+ <div class="card">
+   <div class="text">
+   <button  id="button"onclick="typeWriter()"><b>About us</b></button>
+     <p id="demo"></p>
+   </div>
+
+   
+   <script>
+var i = 0;
+var txt = 'Ideally situated on the Western Express Highway in Borivali West area of Mumbai .The Maharaja is the newest luxury business hotel in the city .This property ideal for business and lesiure travellers who dont want to sacrifice a luxirious hospitality experience.As much convinient for a business tarveler, our hotel is an ideal venue for meetings and events as well as leisurely getaways. Whatever the reason for your visit, we look forward to having you to stay with us and experience our hospitality.With well-appointed 36 Deluxe Rooms and suites, The Maharaja will be a great choice for Business and Leisure travelers.As well as for parties and candale light dinners Promoted by The Maharaja Groups the well known for their chain of restaurants and outdoor catering services.Just close to Sanjay Gandhi National Park, Business Hubs, Call Centers and other local attractions, The Maharaja is an ideal place to leisure and great food.Whatever the reason for your visit, we look forward to having you stay with us';
+
+var speed = 130;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+   <img src="https://images.pexels.com/photos/6474532/pexels-photo-6474532.jpeg?cs=srgb&dl=pexels-cottonbro-6474532.jpg&fm=jpg" alt="image">
+ </div> 
+ 
+</body>
+
+</html>
